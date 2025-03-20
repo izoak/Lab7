@@ -10,13 +10,6 @@ second_hand = pygame.image.load("images/leftarm.png")
 WIDTH, HEIGHT = background.get_size()
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Mickey Mouse Clock")
-
-
-
-WIDTH, HEIGHT = background.get_size()
-
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Mickey Clock")
 
 CENTER = (WIDTH // 2, HEIGHT // 2)
@@ -39,6 +32,7 @@ while running:
     now = datetime.now()
     minute_angle = now.minute * 6
     second_angle = now.second * 6
+
 
     rotated_minute, min_rect = rotate_image(minute_hand, minute_angle)
     rotated_second, sec_rect = rotate_image(second_hand, second_angle)

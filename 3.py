@@ -8,7 +8,7 @@ STEP = 20
 
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
-pygame.display.set_caption("Move the Red Ball")
+pygame.display.set_caption("JAPANESE FLAG")
 
 ball_x, ball_y = WIDTH // 2, HEIGHT // 2
 
